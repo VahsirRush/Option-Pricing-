@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPC Option Pricing</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0e1117;
+            color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid #2a2c33;
+        }
+        
+        h1 {
+            color: #00ff9d;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: #00ff9d;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background-color: #1a1c23;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #00ff9d;
+            margin-top: 0;
+        }
+        
+        .feature-card p {
+            color: #fafafa;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #00ff9d;
+            color: #0e1117;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #00cc7d;
+            box-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #2a2c33;
+            margin-top: 2rem;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            color: #00ff9d;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            color: #fafafa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .social-link:hover {
+            color: #00ff9d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MPC Option Pricing</h1>
+            <p class="subtitle">Secure Multi-Party Computation for Financial Derivatives</p>
+        </header>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>Monte Carlo Simulation</h3>
+                <p>Advanced stochastic simulation for accurate option pricing with configurable parameters and high performance.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Black-Scholes Model</h3>
+                <p>Classical analytical model for European options with secure computation of the cumulative normal distribution.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Binomial Model</h3>
+                <p>Multi-step binomial tree implementation with backward induction for precise option valuation.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Risk Management</h3>
+                <p>Comprehensive risk metrics including Value at Risk (VaR), Expected Shortfall (ES), and stress testing.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Secure Computation</h3>
+                <p>Multi-party computation ensures sensitive financial calculations are performed securely without exposing raw data.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Visualization</h3>
+                <p>Interactive charts and visualizations for price history, volatility, and option price comparisons.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="http://localhost:8501" class="cta-button">Launch Dashboard</a>
+        </div>
+        
+        <footer>
+            <div class="logo">MPC</div>
+            <p>© 2023 MPC Option Pricing. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

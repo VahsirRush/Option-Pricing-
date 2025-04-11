@@ -1,0 +1,35 @@
+# Use Python 3.10 slim image
+FROM python:3.10-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create cache directory
+RUN mkdir -p /app/cache && chmod 777 /app/cache
+
+# Copy requirements file first for better caching
+COPY requirements.txt /app/
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Copy the application
+COPY . .
+
+# Set environment variables
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
+ENV POLYGON_API_KEY=""
+
+# Expose port for Streamlit
+EXPOSE 8501
+
+# Command to run the Streamlit app
+CMD ["streamlit", "run", "web/app.py", "--server.port=8501", "--server.address=0.0.0.0"] 

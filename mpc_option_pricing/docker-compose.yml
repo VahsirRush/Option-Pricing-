@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+      - ALPHA_VANTAGE_API_KEY=demo
+    command: streamlit run web/app.py --server.port 8501 --server.address 0.0.0.0
