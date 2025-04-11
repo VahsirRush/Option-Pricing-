@@ -28,7 +28,11 @@ cd Option-Pricing-
 
 2. Create a `.env` file in the root directory with your Polygon.io API key:
 ```bash
-POLYGON_API_KEY=your_api_key_here
+# Copy the example environment file
+cp .env.example .env
+
+# Edit the .env file and replace 'your_api_key_here' with your actual Polygon.io API key
+# POLYGON_API_KEY=your_api_key_here
 ```
 
 3. Start the application using Docker Compose:
@@ -56,7 +60,11 @@ pip install -r requirements.txt
 
 3. Set up environment variables:
 ```bash
-export POLYGON_API_KEY=your_api_key_here  # On Windows: set POLYGON_API_KEY=your_api_key_here
+# Copy the example environment file
+cp .env.example .env
+
+# Edit the .env file and replace 'your_api_key_here' with your actual Polygon.io API key
+# POLYGON_API_KEY=your_api_key_here
 ```
 
 4. Run the services:
@@ -83,6 +91,7 @@ streamlit run app.py
 ├── tests/              # Test suite
 ├── docs/               # Documentation
 ├── docker-compose.yml  # Docker configuration
+├── .env.example        # Example environment variables
 └── requirements.txt    # Python dependencies
 ```
 
