@@ -1,0 +1,34 @@
+# Python files
+*.py linguist-language=Python
+*.py linguist-detectable=true
+
+# JavaScript files
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+
+# HTML files
+*.html linguist-documentation=true
+
+# CSS files
+*.css linguist-language=CSS
+
+# Documentation
+*.md linguist-documentation=true
+*.rst linguist-documentation=true
+
+# Docker files
+Dockerfile linguist-language=Dockerfile
+docker-compose.yml linguist-language=Dockerfile
+
+# Configuration files
+*.json linguist-language=JSON
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+*.toml linguist-language=TOML
+*.ini linguist-language=INI
+
+# Data files
+*.csv linguist-detectable=false
+*.db linguist-detectable=false 
