@@ -116,5 +116,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Polygon.io for providing market data
-- Black-Scholes model for option pricing theory
+- Black-Scholes, Monte Carlo, Binomial model for option pricing theory
 - FastAPI and Streamlit for the web framework 
